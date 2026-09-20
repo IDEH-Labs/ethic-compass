@@ -111,11 +111,27 @@ public final class MainActivity extends Activity implements SensorEventListener 
             scrollView.setFitsSystemWindows(true);
         }
 
-        TextView title = textView(30, true);
+        LinearLayout header = new LinearLayout(this);
+        header.setOrientation(LinearLayout.HORIZONTAL);
+        header.setGravity(Gravity.CENTER_VERTICAL);
+        header.setPadding(0, dp(4), 0, dp(4));
+
+        android.widget.ImageButton btnMenu = new android.widget.ImageButton(this);
+        btnMenu.setImageResource(R.drawable.ic_settings_menu);
+        btnMenu.setBackground(null);
+        btnMenu.setColorFilter(color(R.color.primary, R.color.primary_dark));
+        btnMenu.setContentDescription(getString(R.string.menu_title));
+        btnMenu.setOnClickListener(v -> EthicEcosystemMenu.show(this, darkMode));
+        header.addView(btnMenu, new LinearLayout.LayoutParams(dp(44), dp(44)));
+
+        TextView title = textView(26, true);
         title.setText(R.string.app_name);
-        title.setGravity(Gravity.CENTER);
+        title.setGravity(Gravity.CENTER_VERTICAL);
         title.setTextColor(color(R.color.on_background, R.color.on_background_dark));
-        root.addView(title, new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams titleParams = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+        titleParams.setMarginStart(dp(8));
+        header.addView(title, titleParams);
+        root.addView(header, new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
         // The live reading is drawn in the dial. These views retain a concise
@@ -153,7 +169,6 @@ public final class MainActivity extends Activity implements SensorEventListener 
         details.setPadding(dp(12), dp(8), dp(12), dp(8));
         details.setText(getString(R.string.details_label));
         details.setClickable(true);
-        details.setFocusable(true);
         details.setOnClickListener(view -> new AlertDialog.Builder(this)
                 .setTitle(R.string.details_label)
                 .setMessage(R.string.details_message)
@@ -188,11 +203,27 @@ public final class MainActivity extends Activity implements SensorEventListener 
         root.addView(controls, new LinearLayout.LayoutParams(
                 0, LinearLayout.LayoutParams.MATCH_PARENT, 0.42f));
 
-        TextView title = textView(24, true);
+        LinearLayout header = new LinearLayout(this);
+        header.setOrientation(LinearLayout.HORIZONTAL);
+        header.setGravity(Gravity.CENTER_VERTICAL);
+        header.setPadding(0, 0, 0, dp(6));
+
+        android.widget.ImageButton btnMenu = new android.widget.ImageButton(this);
+        btnMenu.setImageResource(R.drawable.ic_settings_menu);
+        btnMenu.setBackground(null);
+        btnMenu.setColorFilter(color(R.color.primary, R.color.primary_dark));
+        btnMenu.setContentDescription(getString(R.string.menu_title));
+        btnMenu.setOnClickListener(v -> EthicEcosystemMenu.show(this, darkMode));
+        header.addView(btnMenu, new LinearLayout.LayoutParams(dp(40), dp(40)));
+
+        TextView title = textView(22, true);
         title.setText(R.string.app_name);
-        title.setGravity(Gravity.CENTER);
+        title.setGravity(Gravity.CENTER_VERTICAL);
         title.setTextColor(color(R.color.on_background, R.color.on_background_dark));
-        controls.addView(title, new LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams titleParams = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+        titleParams.setMarginStart(dp(8));
+        header.addView(title, titleParams);
+        controls.addView(header, new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
         headingText = textView(1, false);
@@ -222,7 +253,6 @@ public final class MainActivity extends Activity implements SensorEventListener 
         details.setPadding(dp(12), dp(8), dp(12), dp(8));
         details.setText(getString(R.string.details_label));
         details.setClickable(true);
-        details.setFocusable(true);
         details.setOnClickListener(view -> new AlertDialog.Builder(this)
                 .setTitle(R.string.details_label)
                 .setMessage(R.string.details_message)
