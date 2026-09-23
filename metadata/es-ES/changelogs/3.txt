@@ -1,0 +1,1 @@
+Mejoras en la selección de idioma, consistencia tipográfica y áreas táctiles accesibles para los controles de ajustes e información.

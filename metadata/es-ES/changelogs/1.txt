@@ -1,0 +1,1 @@
+Primera versión: una brújula magnética sin conexión y orientada a la accesibilidad.

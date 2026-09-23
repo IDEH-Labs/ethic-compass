@@ -1,0 +1,8 @@
+Ethic Compass es una brújula magnética desarrollada de forma independiente, diseñada para una orientación clara y accesible.
+
+* Pantalla de rumbo grande y de alto contraste
+* Cambios de puntos cardinales anunciados localmente para servicios de accesibilidad
+* Respuesta háptica opcional, desactivada por defecto
+* Sin permisos de red ni de ubicación
+
+Utiliza los sensores de orientación del teléfono mientras la pantalla está visible. Las lecturas muestran el norte magnético y pueden verse afectadas por imanes cercanos o una calibración deficiente. No es un instrumento de seguridad ni de navegación.

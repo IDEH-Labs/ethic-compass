@@ -1,0 +1,1 @@
+Se perfeccionó la interfaz con un dial de brújula original más grande, modo oscuro opcional y un diseño dedicado para modo horizontal.
