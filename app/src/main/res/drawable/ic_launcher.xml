@@ -1,10 +1,50 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="48dp"
-    android:height="48dp"
-    android:viewportWidth="48"
-    android:viewportHeight="48">
-    <path android:fillColor="#101418" android:pathData="M0,0h48v48h-48z" />
-    <path android:fillColor="#70E1FF" android:pathData="M24,4L35,35L24,29L13,35Z" />
-    <path android:fillColor="#FFB4AB" android:pathData="M24,4L24,29L13,35Z" />
-    <path android:fillColor="#F4F7FA" android:pathData="M22,20h4v8h-4z" />
+    xmlns:aapt="http://schemas.android.com/apk/res-auto"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M54,4A50,50 0,1 0,54,104A50,50 0,1 0,54,4">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="15"
+                android:startY="15"
+                android:endX="95"
+                android:endY="95"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#2DD4BF" />
+                <item android:offset="1.0" android:color="#059669" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Compass Rose Outer Ring -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M54,24 A30,30 0,1 0,54 84 A30,30 0,1 0,54 24" />
+    <!-- Cardinal Ticks -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M54,26 L54,30 M54,78 L54,82 M26,54 L30,54 M78,54 L82,54" />
+    <!-- Needle: North (Coral Red) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M54,32 L58,54 L54,51 Z" />
+    <path
+        android:fillColor="#F87171"
+        android:pathData="M54,32 L50,54 L54,51 Z" />
+    <!-- Needle: South (Silver White) -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M54,76 L58,54 L54,57 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,76 L50,54 L54,57 Z" />
+    <!-- Center Pivot -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M54,51 A3,3 0,1 0,54 57 A3,3 0,1 0,54 51" />
 </vector>
