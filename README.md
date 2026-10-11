@@ -33,18 +33,12 @@ Build with a Java 17-compatible JDK and Android SDK platform 36:
 The release build does not contain VCS or dependency metadata. The Gradle
 wrapper pins both its distribution version and SHA-256 checksum.
 
-## F-Droid status
+## Distribution
 
-Version `1.0.2` has a [production-signed APK and SHA-256 checksum on its GitHub
-release](https://github.com/jpi59/ethic-compass/releases/tag/v1.0.2). The
-certificate fingerprint and verification command are recorded there.
-
-The metadata recipe is proposed in [F-Droid merge request
-!48463](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/48463). The
-source tag and local checks are documented here, but F-Droid acceptance,
-publication and independent reproducibility remain decisions for its build and
-review process. F-Droid will build and sign an independent APK if it accepts the
-recipe; it is not an update-compatible replacement for the direct APK.
+Ethic Compass is available on [F-Droid](https://f-droid.org/packages/org.jpi59.ethiccompass/). Production-signed
+APKs and their SHA-256 checksums are also published on [GitHub
+Releases](https://github.com/IDEH-Labs/ethic-compass/releases). F-Droid builds and signs its own APK from the source,
+so an F-Droid installation cannot be updated with a GitHub APK, or the other way round.
 
 ## License
 
