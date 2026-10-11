@@ -37,8 +37,9 @@ wrapper pins both its distribution version and SHA-256 checksum.
 
 Ethic Compass is available on [F-Droid](https://f-droid.org/packages/org.jpi59.ethiccompass/). Production-signed
 APKs and their SHA-256 checksums are also published on [GitHub
-Releases](https://github.com/IDEH-Labs/ethic-compass/releases). F-Droid builds and signs its own APK from the source,
-so an F-Droid installation cannot be updated with a GitHub APK, or the other way round.
+Releases](https://github.com/IDEH-Labs/ethic-compass/releases). F-Droid builds the source, checks that the result matches
+the published APK (reproducible build) and distributes the APK signed by the developer, so F-Droid and GitHub
+installations can update each other.
 
 ## License
 
