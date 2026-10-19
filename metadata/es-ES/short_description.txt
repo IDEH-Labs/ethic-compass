@@ -1,1 +1,1 @@
-Una brújula magnética accesible y sin conexión.
+Brújula magnética accesible para orientación sin conexión.
