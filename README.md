@@ -46,3 +46,8 @@ installations can update each other.
 Copyright © 2026 jpi59. Ethic Compass is licensed under GPL-3.0-or-later; see
 [LICENSE](LICENSE). No source code or visual asset from another compass project
 was copied into this repository.
+
+
+---
+
+An **[IDEH Labs](https://codeberg.org/IDEH-Labs)** project · [Codeberg](https://codeberg.org/IDEH-Labs/ethic-compass)
