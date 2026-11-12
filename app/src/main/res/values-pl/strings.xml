@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ethic Compass</string>
+    <string name="heading_unavailable">Czujnik orientacji niedostępny</string>
+    <string name="heading_format">%1$d° · %2$s</string>
+    <string name="status_summary">Północ magnetyczna · Offline</string>
+    <string name="haptics_label">Wibracje przy zmianie kierunku</string>
+    <string name="haptics_description">Wibracje są domyślnie wyłączone i występują tylko przy zmianie kierunku głównego.</string>
+    <string name="haptics_info_description">Czym są wibracje przy zmianie kierunku?</string>
+    <string name="haptics_dialog_title">Wibracje przy zmianie kierunku</string>
+    <string name="haptics_dialog_message">Ta opcjonalna funkcja daje krótką wibrację, gdy kompas przechodzi na inny kierunek główny, na przykład północ lub wschód. Wykorzystuje wyłącznie funkcję wibracji tego telefonu. Nie wymaga lokalizacji, sieci ani zbierania danych.</string>
+    <string name="haptics_dialog_enable">Włącz wibracje</string>
+    <string name="dark_mode_label">Użyj trybu ciemnego</string>
+    <string name="dark_mode_description">Użyj ciemnego motywu kolorystycznego. To ustawienie jest przechowywane tylko na tym urządzeniu.</string>
+    <string name="language_value_format">Język: %1$s</string>
+    <string name="language_description">Wybierz język wyświetlania. To ustawienie jest przechowywane tylko na tym urządzeniu.</string>
+    <string name="language_dialog_title">Język wyświetlania</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">English</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_system">Zgodnie z językiem urządzenia</string>
+    <string name="details_label">Precyzja &amp; prywatność</string>
+    <string name="details_message">Wykorzystuje północ magnetyczną. Trzymaj telefon poziomo i z dala od magnesów, aby uzyskać bardziej wiarygodny odczyt. Działa bez sieci i lokalizacji oraz nie zbiera ani nie przesyła danych.</string>
+    <string name="sensor_unavailable">To urządzenie nie udostępnia zgodnego czujnika orientacji.</string>
+    <string name="cardinal_n">Północ</string>
+    <string name="cardinal_ne">Północny wschód</string>
+    <string name="cardinal_e">Wschód</string>
+    <string name="cardinal_se">Południowy wschód</string>
+    <string name="cardinal_s">Południe</string>
+    <string name="cardinal_sw">Południowy zachód</string>
+    <string name="cardinal_w">Zachód</string>
+    <string name="cardinal_nw">Północny zachód</string>
+    <string name="dial_north">N</string>
+    <string name="dial_east">E</string>
+    <string name="dial_south">S</string>
+    <string name="dial_west">W</string>
+
+    <!-- Menu & Projects -->
+    <string name="menu_title">O nas</string>
+    <string name="ecosystem_section">Projekty</string>
+    <string name="ecosystem_desc">Suwerenne, offline'owe aplikacje copyleft stawiające prywatność na pierwszym miejscu, tworzone przez IDEH Labs.</string>
+    <string name="app_installed">Zainstalowano</string>
+    <string name="app_open">Otwórz</string>
+    <string name="app_view">Zobacz</string>
+    <string name="open_source_section">Suwerenność &amp; kod źródłowy</string>
+    <string name="github_repo_label">Repozytorium GitHub</string>
+    <string name="gitlab_repo_label">Repozytorium GitLab</string>
+    <string name="license_label">Licencja GNU GPLv3</string>
+    <string name="license_desc">Ścisły copyleft. Możesz swobodnie uruchamiać, badać, udostępniać i modyfikować.</string>
+    <string name="technical_info_section">Integralność techniczna</string>
+    <string name="package_id_label">Identyfikator pakietu</string>
+    <string name="key_fingerprint_label">Certyfikat podpisującego (SHA-256)</string>
+    <string name="compass_badge">0 zadeklarowanych uprawnień · 100% offline</string>
+    <string name="done">Gotowe</string>
+</resources>
